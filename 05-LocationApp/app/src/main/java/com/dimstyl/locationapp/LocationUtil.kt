@@ -52,9 +52,9 @@ class LocationUtil {
 
         fun reverseGeocoderLocation(context: Context, location: Location): String {
             val geocoder = Geocoder(context, Locale.getDefault())
-            val coordinate = LatLng(location.latitude, location.longitude)
+            val coordinates = LatLng(location.latitude, location.longitude)
             val address: MutableList<Address>? =
-                geocoder.getFromLocation(coordinate.latitude, coordinate.longitude, 1)
+                geocoder.getFromLocation(coordinates.latitude, coordinates.longitude, 1)
             return address?.get(0)?.getAddressLine(0) ?: "Unknown"
         }
     }
