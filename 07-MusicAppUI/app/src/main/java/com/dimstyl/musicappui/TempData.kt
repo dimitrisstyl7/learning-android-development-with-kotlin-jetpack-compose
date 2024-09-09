@@ -12,7 +12,7 @@ val dummySections = listOf(
     "Recommended for You"
 )
 
-val musicLibraryItems = listOf(
+val dummyMusicLibraryItems = listOf(
     MusicLibraryItem(R.drawable.round_music_note_24, "Songs"),
     MusicLibraryItem(R.drawable.baseline_album_24, "Albums"),
     MusicLibraryItem(R.drawable.sharp_artist_24, "Artists"),

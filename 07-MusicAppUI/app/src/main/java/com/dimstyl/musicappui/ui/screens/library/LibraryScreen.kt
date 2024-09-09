@@ -20,12 +20,12 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.dimstyl.musicappui.MusicLibraryItem
-import com.dimstyl.musicappui.musicLibraryItems
+import com.dimstyl.musicappui.dummyMusicLibraryItems
 
 @Composable
 fun LibraryScreen() {
     LazyColumn {
-        items(musicLibraryItems) {
+        items(dummyMusicLibraryItems) {
             MusicLibraryItemCard(it)
         }
     }
